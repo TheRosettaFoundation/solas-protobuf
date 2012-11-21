@@ -1,0 +1,9 @@
+protoc-gen-php -o ./generated/php -i ./protos/emails ./protos/emails/EmailMessage.proto
+protoc-gen-php -o ./generated/php -i ./protos/emails ./protos/emails/OrgMembershipAccepted.proto
+protoc-gen-php -o ./generated/php -i ./protos/emails ./protos/emails/OrgMembershipRefused.proto
+protoc-gen-php -o ./generated/php -i ./protos/emails ./protos/emails/PasswordResetEmail.proto
+protoc-gen-php -o ./generated/php -i ./protos/emails ./protos/emails/TaskArchived.proto
+protoc-gen-php -o ./generated/php -i ./protos/emails ./protos/emails/TaskClaimed.proto
+protoc-gen-php -o ./generated/php -i ./protos/emails ./protos/emails/TaskScoreEmail.proto
+protoc-gen-php -o ./generated/php -i ./protos/emails ./protos/emails/TaskTranslationUploaded.proto
+protoc-gen-php -o ./generated/php -i ./protos/emails ./protos/emails/UserTaskClaim.proto
