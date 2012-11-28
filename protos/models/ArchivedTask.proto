@@ -1,0 +1,14 @@
+message ArchivedTask
+{
+    required int32 archive_id = 1;
+    required int32 task_id = 2;
+    optional int32 org_id = 3;
+    optional string title = 4;
+    optional int32 word_count = 5;
+    optional int32 source_id = 6;
+    optional int32 target_id = 7;
+    optional string created_time = 8;
+    optional string archived_time = 9;
+    optional string impact = 10;
+    optional string reference_page = 11;
+}

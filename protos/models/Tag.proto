@@ -1,0 +1,5 @@
+message Tag
+{
+    required int32 id = 1;
+    required string label = 2;
+}

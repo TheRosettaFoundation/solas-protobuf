@@ -1,0 +1,12 @@
+message User
+{
+    required int32 user_id = 1;
+    optional string display_name = 2;
+    optional string email = 3;
+    optional string password = 4;
+    optional string biography = 5;
+    optional string nonce = 6;
+    optional string created_time = 7;
+    optional int32 native_lang_id = 8;
+    optional int32 native_region_id = 9;
+}

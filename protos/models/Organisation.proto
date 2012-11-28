@@ -1,0 +1,7 @@
+message Organisation
+{
+    required int32 id = 1;
+    optional string name = 2;
+    optional string home_page = 3;
+    optional string biography = 4;
+}
