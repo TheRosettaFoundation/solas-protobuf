@@ -1,0 +1,4 @@
+message UserTaskScoreRequest
+{
+    optional int32 task_id = 1;
+}
