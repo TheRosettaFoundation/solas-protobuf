@@ -1,0 +1,6 @@
+message DeadlineCheckRequest
+{
+    optional int32 task_id = 1;
+    optional int32 org_id = 2;
+    optional int32 user_id = 3;
+}
