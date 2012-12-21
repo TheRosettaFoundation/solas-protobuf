@@ -1,2 +1,3 @@
 ./generated/cpp/*
 ./generated/php/*
+/nbproject/private/

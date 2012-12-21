@@ -1,6 +1,6 @@
 message Task
 {
-    required int32 id = 1;
+    optional int32 id = 1;
     optional int32 org_id = 2;
     optional string title = 3;
     optional string impact = 4;

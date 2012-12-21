@@ -1,6 +1,6 @@
 message ArchivedTask
 {
-    required int32 archive_id = 1;
+    optional int32 archive_id = 1;
     required int32 task_id = 2;
     optional int32 org_id = 3;
     optional string title = 4;
