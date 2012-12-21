@@ -1,0 +1,10 @@
+import "EmailMessage.proto";
+
+message OrgTaskDeadlinePassed
+{
+    required EmailMessage.Type email_type = 1 [default = OrgTaskDeadlinePassed];
+    required int32 user_id = 2;
+    required int32 org_id = 3;
+    required int32 task_id = 4;
+    optional int32 translator_id = 5;
+}

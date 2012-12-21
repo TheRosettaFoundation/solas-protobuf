@@ -12,6 +12,8 @@ message EmailMessage
         TaskArchived = 6;
         TaskClaimed = 7;
         TaskTranslationUploaded = 8;
+        OrgTaskDeadlinePassed = 9;
+        UserClaimedTaskDeadlinePassed = 10;
     }
 
     required Type email_type = 1;
