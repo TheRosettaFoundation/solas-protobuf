@@ -27,3 +27,7 @@ protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/User
 
 ### Generate Requests Classes ###
 protoc-gen-php -o ./generated/php/requests -i ./protos/requests ./protos/requests/UserTaskScoreRequest.proto
+
+
+### Generate Common Classes ###
+protoc-gen-php -o ./generated/php -i ./protos ./protos/ProtoList.proto
