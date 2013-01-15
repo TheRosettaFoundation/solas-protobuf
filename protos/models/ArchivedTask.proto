@@ -1,14 +1,21 @@
 message ArchivedTask
 {
-    required int32 archive_id = 1;
-    required int32 task_id = 2;
-    optional int32 org_id = 3;
-    optional string title = 4;
-    optional int32 word_count = 5;
-    optional int32 source_id = 6;
-    optional int32 target_id = 7;
-    optional string created_time = 8;
-    optional string archived_time = 9;
-    optional string impact = 10;
-    optional string reference_page = 11;
+    required int32 id = 1;
+    optional int32 projectId = 2;
+    optional string title = 3;
+    optional string comment = 4;
+    optional string deadline = 5;
+    optional int32 wordCount = 6;
+    optional string createdTime = 7;
+    optional int32 sourceLanguageId = 8;
+    optional int32 targetLanguageId = 9;
+    optional int32 sourceCountryId = 10;
+    optional int32 targetCountryId = 11;
+    optional string taskType = 12;
+    optional string taskStatus = 13;
+    optional bool published = 14;
+    optional int32 translatorId = 15;
+    optional int32 archiveUserId = 16;
+    optional string archiveDate = 17;
+    optional string tags = 18;
 }

@@ -1,17 +1,18 @@
 message Task
 {
     required int32 id = 1;
-    optional int32 org_id = 2;
+    optional int32 projectId = 2;
     optional string title = 3;
-    optional string impact = 4;
-    optional string reference_page = 5;
-    optional int32 word_count = 6;
-    optional int32 source_lang_id = 7;
-    optional int32 target_lang_id = 8;
-    optional string created_time = 9;
-    optional int32 source_region_id = 10;
-    optional int32 target_region_id = 11;
-    optional string status = 12;
-    repeated string tags = 13;
-    required string deadline = 14;
+    optional string comment = 4;
+    required string deadline = 5;
+    optional int32 wordCount = 6;
+    optional string createdTime = 7;
+    optional int32 sourceLanguageId = 8;
+    optional int32 targetLanguageId = 9;
+    optional int32 sourceCountryId = 10;
+    optional int32 targetCountryId = 11;
+    optional string taskType = 12;
+    optional string taskStatus = 13;
+    optional bool published = 14;
+    repeated string tags = 15;
 }
