@@ -7,10 +7,10 @@ message ArchivedTask
     optional string deadline = 5;
     optional int32 wordCount = 6;
     optional string createdTime = 7;
-    optional int32 sourceLanguageId = 8;
-    optional int32 targetLanguageId = 9;
-    optional int32 sourceCountryId = 10;
-    optional int32 targetCountryId = 11;
+    optional int32 sourceLanguageCode = 8;
+    optional int32 targetLanguageCode = 9;
+    optional int32 sourceCountryCode = 10;
+    optional int32 targetCountryCode = 11;
     optional string taskType = 12;
     optional string taskStatus = 13;
     optional bool published = 14;

@@ -9,4 +9,7 @@ message Project
     optional int32 wordCount = 7;
     optional string createdTime = 8;
     optional string status = 9;
+    optional string sourceLanguageCode = 10;
+    optional string sourceCountryCode = 11;
+    repeated string tag = 12;
 }
