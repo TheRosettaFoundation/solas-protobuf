@@ -25,6 +25,8 @@ protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/Tag.
 protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/TaskMetadata.proto
 protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/Task.proto
 protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/User.proto
+protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/WorkflowNode.proto
+protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/WorkflowGraph.proto
 
 ### Generate Requests Classes ###
 protoc-gen-php -o ./generated/php/requests -i ./protos/requests ./protos/requests/UserTaskScoreRequest.proto
