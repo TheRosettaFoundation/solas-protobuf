@@ -13,8 +13,8 @@ message Task
     optional string targetLanguageCode = 9;
     optional string sourceCountryCode = 10;
     optional string targetCountryCode = 11;
-    optional string taskType = 12;
-    optional string taskStatus = 13;
+    optional int32 taskType = 12;
+    optional int32 taskStatus = 13;
     optional bool published = 14;
     repeated Tag tag = 15;
 }

@@ -7,7 +7,9 @@ message ArchivedProject
     optional int32 organisationId = 5;
     optional string reference = 6;
     optional int32 wordCount = 7;
-    optional string createdTime = 8;
-    optional string archivedDate = 9;
-    optional int32 translatorId = 10;
+    optional string languageCode = 8;
+    optional string countryCode = 9;
+    optional string createdTime = 10;
+    optional string archivedDate = 11;
+    optional int32 translatorId = 12;
 }
