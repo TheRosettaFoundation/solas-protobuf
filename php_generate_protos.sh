@@ -8,6 +8,7 @@ protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/Task
 protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/TaskScoreEmail.proto
 protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/TaskTranslationUploaded.proto
 protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/UserTaskClaim.proto
+protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/FeedbackEmail.proto
 
 ### Generate Model Classes ###
 protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/ArchivedTask.proto
