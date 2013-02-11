@@ -1,3 +1,5 @@
+import "Tag.proto";
+
 message Task
 {
     required int32 id = 1;
@@ -14,5 +16,5 @@ message Task
     optional string taskType = 12;
     optional string taskStatus = 13;
     optional bool published = 14;
-    repeated string tags = 15;
+    repeated Tag tag = 15;
 }
