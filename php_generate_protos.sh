@@ -29,6 +29,7 @@ protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/Proj
 protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/ArchivedProject.proto
 protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/WorkflowNode.proto
 protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/WorkflowGraph.proto
+protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/Statistic.proto
 
 ### Generate Requests Classes ###
 protoc-gen-php -o ./generated/php/requests -i ./protos/requests ./protos/requests/UserTaskScoreRequest.proto
