@@ -5,11 +5,12 @@ message Project
     optional string description = 3;
     optional string deadline = 4;
     optional int32 organisationId = 5;
-    optional string reference = 6;
-    optional int32 wordCount = 7;
-    optional string createdTime = 8;
-    optional string status = 9;
-    optional string sourceLanguageCode = 10;
-    optional string sourceCountryCode = 11;
-    repeated string tag = 12;
+	optional string impact = 6;
+    optional string reference = 7;
+    optional int32 wordCount = 8;
+    optional string createdTime = 9;
+    optional string status = 10;
+    optional string sourceLanguageCode = 11;
+    optional string sourceCountryCode = 12;
+    repeated string tag = 13;
 }
