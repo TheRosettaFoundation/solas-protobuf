@@ -1,0 +1,4 @@
+message StatisticsUpdateRequest
+{
+    optional string request_time = 1;
+}

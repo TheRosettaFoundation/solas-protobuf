@@ -33,7 +33,7 @@ protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/Stat
 
 ### Generate Requests Classes ###
 protoc-gen-php -o ./generated/php/requests -i ./protos/requests ./protos/requests/UserTaskScoreRequest.proto
-
+protoc-gen-php -o ./generated/php/requests -i ./protos/requests ./protos/requests/StatisticsUpdateRequest.proto
 
 ### Generate Common Classes ###
 protoc-gen-php -o ./generated/php -i ./protos ./protos/ProtoList.proto
