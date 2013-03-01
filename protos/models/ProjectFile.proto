@@ -1,0 +1,7 @@
+message ProjectFile
+{
+    optional int32 projectId = 1;
+    optional string filename = 2;
+    optional string token = 3;
+    optional int32 userId = 4;
+}
