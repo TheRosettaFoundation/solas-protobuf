@@ -4,4 +4,5 @@ message ProjectFile
     optional string filename = 2;
     optional string token = 3;
     optional int32 userId = 4;
+	optional string mime = 5;
 }
