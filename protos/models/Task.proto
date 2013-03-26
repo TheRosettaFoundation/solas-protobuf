@@ -16,5 +16,4 @@ message Task
     optional int32 taskType = 12;
     optional int32 taskStatus = 13;
     optional bool published = 14;
-    repeated Tag tag = 15;
 }
