@@ -4,6 +4,6 @@ message WorkflowNode
 {
     required int32 taskId = 1;
     optional Task task = 2;
-    repeated WorkflowNode next = 3;
-    repeated WorkflowNode previous = 4;
+    repeated int32 next = 3;
+    repeated int32 previous = 4;
 }
