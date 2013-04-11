@@ -1,4 +1,4 @@
-import "Locale.proto"
+import "Locale.proto";
 
 message Project
 {
