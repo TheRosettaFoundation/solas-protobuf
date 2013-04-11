@@ -1,5 +1,5 @@
 message Statistic
 {
-    required string name = 1;
+    optional string name = 1;
     optional string value = 2;
 }

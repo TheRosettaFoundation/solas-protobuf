@@ -1,19 +1,17 @@
-import "Tag.proto";
+import "Locale.proto";
 
 message Task
 {
-    required int32 id = 1;
+    optional int32 id = 1;
     optional int32 projectId = 2;
     optional string title = 3;
     optional string comment = 4;
-    required string deadline = 5;
+    optional string deadline = 5;
     optional int32 wordCount = 6;
     optional string createdTime = 7;
-    optional string sourceLanguageCode = 8;
-    optional string targetLanguageCode = 9;
-    optional string sourceCountryCode = 10;
-    optional string targetCountryCode = 11;
-    optional int32 taskType = 12;
-    optional int32 taskStatus = 13;
-    optional bool published = 14;
+    optional Locale sourceLocale = 8;
+    optional Locale targetLocale = 9;
+    optional int32 taskType = 10;
+    optional int32 taskStatus = 11;
+    optional bool published = 12;
 }

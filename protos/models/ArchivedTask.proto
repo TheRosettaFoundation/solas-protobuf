@@ -1,6 +1,6 @@
 message ArchivedTask
 {
-    required int32 id = 1;
+    optional int32 id = 1;
     optional int32 projectId = 2;
     optional string title = 3;
     optional string comment = 4;

@@ -1,7 +1,7 @@
 message TaskMetadata
 {
-    required int32 id = 1;
-    required int32 version = 2;
+    optional int32 id = 1;
+    optional int32 version = 2;
     optional string filename = 3;
     optional string content_type = 4;
     optional int32 user_id = 5;

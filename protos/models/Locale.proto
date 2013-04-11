@@ -1,0 +1,7 @@
+message Locale
+{
+    optional string languageName = 1;
+    optional string languageCode = 2;
+    optional string countryName = 3;
+    optional string countryCode = 4;
+}
