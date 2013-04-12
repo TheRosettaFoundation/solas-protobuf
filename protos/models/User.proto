@@ -10,4 +10,5 @@ message User
     optional string nonce = 6;
     optional string created_time = 7;
     optional Locale nativeLocale = 8;
+	repeated Locale secondaryLocales = 9;
 }
