@@ -1,0 +1,19 @@
+
+å
+EmailMessage.proto"Î
+EmailMessage&
+
+email_type (2.EmailMessage.Type"‹
+Type
+TaskScoreEmail
+UserTaskClaim
+OrgMembershipAccepted
+OrgMembershipRefused
+PasswordResetEmail
+TaskArchived
+TaskClaimed
+TaskTranslationUploaded
+OrgTaskDeadlinePassed	!
+UserClaimedTaskDeadlinePassed
+
+FeedbackEmail*d€€€€

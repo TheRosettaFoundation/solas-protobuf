@@ -1,0 +1,9 @@
+
+“
+WorkflowNode.proto
+Task.proto"q
+WorkflowNode
+taskId (
+task (2.Task
+next (2.WorkflowNode
+previous (2.WorkflowNode
