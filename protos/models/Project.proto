@@ -1,4 +1,5 @@
 import "Locale.proto";
+import "Tag.proto";
 
 message Project
 {
@@ -13,5 +14,5 @@ message Project
     optional string createdTime = 9;
     optional string status = 10;	
     optional Locale sourceLocale = 11;
-    repeated string tag = 12;
+    repeated Tag tag = 12;
 }
