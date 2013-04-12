@@ -23,13 +23,15 @@ namespace SolasMatch.Proto.model
       get { return _rootNode; }
     }
   
-    private readonly global::System.Collections.Generic.List<WorkflowNode> _allNodes = new global::System.Collections.Generic.List<WorkflowNode>();
-    [global::ProtoBuf.ProtoMember(2, Name=@"allNodes", DataFormat = global::ProtoBuf.DataFormat.Default)]
-    public global::System.Collections.Generic.List<WorkflowNode> allNodes
+
+    private int _projectId = default(int);
+    [global::ProtoBuf.ProtoMember(2, IsRequired = false, Name=@"projectId", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    [global::System.ComponentModel.DefaultValue(default(int))]
+    public int projectId
     {
-      get { return _allNodes; }
+      get { return _projectId; }
+      set { _projectId = value; }
     }
-  
     private global::ProtoBuf.IExtension extensionObject;
     global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
       { return global::ProtoBuf.Extensible.GetExtensionObject(ref extensionObject, createIfMissing); }

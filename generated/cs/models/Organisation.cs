@@ -34,22 +34,67 @@ namespace SolasMatch.Proto.model
       set { _name = value; }
     }
 
-    private string _home_page = "";
-    [global::ProtoBuf.ProtoMember(3, IsRequired = false, Name=@"home_page", DataFormat = global::ProtoBuf.DataFormat.Default)]
-    [global::System.ComponentModel.DefaultValue("")]
-    public string home_page
-    {
-      get { return _home_page; }
-      set { _home_page = value; }
-    }
-
     private string _biography = "";
-    [global::ProtoBuf.ProtoMember(4, IsRequired = false, Name=@"biography", DataFormat = global::ProtoBuf.DataFormat.Default)]
+    [global::ProtoBuf.ProtoMember(3, IsRequired = false, Name=@"biography", DataFormat = global::ProtoBuf.DataFormat.Default)]
     [global::System.ComponentModel.DefaultValue("")]
     public string biography
     {
       get { return _biography; }
       set { _biography = value; }
+    }
+
+    private string _homepage = "";
+    [global::ProtoBuf.ProtoMember(4, IsRequired = false, Name=@"homepage", DataFormat = global::ProtoBuf.DataFormat.Default)]
+    [global::System.ComponentModel.DefaultValue("")]
+    public string homepage
+    {
+      get { return _homepage; }
+      set { _homepage = value; }
+    }
+
+    private string _email = "";
+    [global::ProtoBuf.ProtoMember(5, IsRequired = false, Name=@"email", DataFormat = global::ProtoBuf.DataFormat.Default)]
+    [global::System.ComponentModel.DefaultValue("")]
+    public string email
+    {
+      get { return _email; }
+      set { _email = value; }
+    }
+
+    private string _address = "";
+    [global::ProtoBuf.ProtoMember(6, IsRequired = false, Name=@"address", DataFormat = global::ProtoBuf.DataFormat.Default)]
+    [global::System.ComponentModel.DefaultValue("")]
+    public string address
+    {
+      get { return _address; }
+      set { _address = value; }
+    }
+
+    private string _city = "";
+    [global::ProtoBuf.ProtoMember(7, IsRequired = false, Name=@"city", DataFormat = global::ProtoBuf.DataFormat.Default)]
+    [global::System.ComponentModel.DefaultValue("")]
+    public string city
+    {
+      get { return _city; }
+      set { _city = value; }
+    }
+
+    private string _country = "";
+    [global::ProtoBuf.ProtoMember(8, IsRequired = false, Name=@"country", DataFormat = global::ProtoBuf.DataFormat.Default)]
+    [global::System.ComponentModel.DefaultValue("")]
+    public string country
+    {
+      get { return _country; }
+      set { _country = value; }
+    }
+
+    private string _regionalFocus = "";
+    [global::ProtoBuf.ProtoMember(9, IsRequired = false, Name=@"regionalFocus", DataFormat = global::ProtoBuf.DataFormat.Default)]
+    [global::System.ComponentModel.DefaultValue("")]
+    public string regionalFocus
+    {
+      get { return _regionalFocus; }
+      set { _regionalFocus = value; }
     }
     private global::ProtoBuf.IExtension extensionObject;
     global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)

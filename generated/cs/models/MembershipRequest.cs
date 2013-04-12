@@ -15,22 +15,28 @@ namespace SolasMatch.Proto.model
   {
     public MembershipRequest() {}
     
-    private int _id;
-    [global::ProtoBuf.ProtoMember(1, IsRequired = true, Name=@"id", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+
+    private int _id = default(int);
+    [global::ProtoBuf.ProtoMember(1, IsRequired = false, Name=@"id", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    [global::System.ComponentModel.DefaultValue(default(int))]
     public int id
     {
       get { return _id; }
       set { _id = value; }
     }
-    private int _user_id;
-    [global::ProtoBuf.ProtoMember(2, IsRequired = true, Name=@"user_id", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+
+    private int _user_id = default(int);
+    [global::ProtoBuf.ProtoMember(2, IsRequired = false, Name=@"user_id", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    [global::System.ComponentModel.DefaultValue(default(int))]
     public int user_id
     {
       get { return _user_id; }
       set { _user_id = value; }
     }
-    private int _org_id;
-    [global::ProtoBuf.ProtoMember(3, IsRequired = true, Name=@"org_id", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+
+    private int _org_id = default(int);
+    [global::ProtoBuf.ProtoMember(3, IsRequired = false, Name=@"org_id", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    [global::System.ComponentModel.DefaultValue(default(int))]
     public int org_id
     {
       get { return _org_id; }

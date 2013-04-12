@@ -8,6 +8,7 @@
 //------------------------------------------------------------------------------
 
 // Generated from: User.proto
+// Note: requires additional types generated from: Locale.proto
 namespace SolasMatch.Proto.model
 {
   [global::System.Serializable, global::ProtoBuf.ProtoContract(Name=@"User")]
@@ -16,13 +17,13 @@ namespace SolasMatch.Proto.model
     public User() {}
     
 
-    private int _user_id = default(int);
-    [global::ProtoBuf.ProtoMember(1, IsRequired = false, Name=@"user_id", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    private int _id = default(int);
+    [global::ProtoBuf.ProtoMember(1, IsRequired = false, Name=@"id", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
     [global::System.ComponentModel.DefaultValue(default(int))]
-    public int user_id
+    public int id
     {
-      get { return _user_id; }
-      set { _user_id = value; }
+      get { return _id; }
+      set { _id = value; }
     }
 
     private string _display_name = "";
@@ -79,23 +80,21 @@ namespace SolasMatch.Proto.model
       set { _created_time = value; }
     }
 
-    private int _native_lang_id = default(int);
-    [global::ProtoBuf.ProtoMember(8, IsRequired = false, Name=@"native_lang_id", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
-    [global::System.ComponentModel.DefaultValue(default(int))]
-    public int native_lang_id
+    private Locale _nativeLocale = null;
+    [global::ProtoBuf.ProtoMember(8, IsRequired = false, Name=@"nativeLocale", DataFormat = global::ProtoBuf.DataFormat.Default)]
+    [global::System.ComponentModel.DefaultValue(null)]
+    public Locale nativeLocale
     {
-      get { return _native_lang_id; }
-      set { _native_lang_id = value; }
+      get { return _nativeLocale; }
+      set { _nativeLocale = value; }
     }
-
-    private int _native_region_id = default(int);
-    [global::ProtoBuf.ProtoMember(9, IsRequired = false, Name=@"native_region_id", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
-    [global::System.ComponentModel.DefaultValue(default(int))]
-    public int native_region_id
+    private readonly global::System.Collections.Generic.List<Locale> _secondaryLocales = new global::System.Collections.Generic.List<Locale>();
+    [global::ProtoBuf.ProtoMember(9, Name=@"secondaryLocales", DataFormat = global::ProtoBuf.DataFormat.Default)]
+    public global::System.Collections.Generic.List<Locale> secondaryLocales
     {
-      get { return _native_region_id; }
-      set { _native_region_id = value; }
+      get { return _secondaryLocales; }
     }
+  
     private global::ProtoBuf.IExtension extensionObject;
     global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
       { return global::ProtoBuf.Extensible.GetExtensionObject(ref extensionObject, createIfMissing); }

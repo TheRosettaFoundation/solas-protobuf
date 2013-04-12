@@ -1,23 +1,20 @@
 
-Ó
+“
 
-Task.proto	Tag.proto"¹
+Task.protoLocale.proto"ö
 Task
 
-id (
+id (
 	projectId (
 title (	
 comment (	
-deadline (	
+deadline (	
 	wordCount (
-createdTime (	
-sourceLanguageCode (	
-targetLanguageCode	 (	
-sourceCountryCode
- (	
-targetCountryCode (	
-taskType (
+createdTime (	
+sourceLocale (2.Locale
+targetLocale	 (2.Locale
+taskType
+ (
 
-taskStatus (
-	published (
-tag (2.Tag
+taskStatus (
+	published (

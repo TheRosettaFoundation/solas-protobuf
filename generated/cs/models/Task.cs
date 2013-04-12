@@ -8,7 +8,7 @@
 //------------------------------------------------------------------------------
 
 // Generated from: Task.proto
-// Note: requires additional types generated from: Tag.proto
+// Note: requires additional types generated from: Locale.proto
 namespace SolasMatch.Proto.model
 {
   [global::System.Serializable, global::ProtoBuf.ProtoContract(Name=@"Task")]
@@ -16,8 +16,10 @@ namespace SolasMatch.Proto.model
   {
     public Task() {}
     
-    private int _id;
-    [global::ProtoBuf.ProtoMember(1, IsRequired = true, Name=@"id", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+
+    private int _id = default(int);
+    [global::ProtoBuf.ProtoMember(1, IsRequired = false, Name=@"id", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    [global::System.ComponentModel.DefaultValue(default(int))]
     public int id
     {
       get { return _id; }
@@ -50,8 +52,10 @@ namespace SolasMatch.Proto.model
       get { return _comment; }
       set { _comment = value; }
     }
-    private string _deadline;
-    [global::ProtoBuf.ProtoMember(5, IsRequired = true, Name=@"deadline", DataFormat = global::ProtoBuf.DataFormat.Default)]
+
+    private string _deadline = "";
+    [global::ProtoBuf.ProtoMember(5, IsRequired = false, Name=@"deadline", DataFormat = global::ProtoBuf.DataFormat.Default)]
+    [global::System.ComponentModel.DefaultValue("")]
     public string deadline
     {
       get { return _deadline; }
@@ -76,44 +80,26 @@ namespace SolasMatch.Proto.model
       set { _createdTime = value; }
     }
 
-    private string _sourceLanguageCode = "";
-    [global::ProtoBuf.ProtoMember(8, IsRequired = false, Name=@"sourceLanguageCode", DataFormat = global::ProtoBuf.DataFormat.Default)]
-    [global::System.ComponentModel.DefaultValue("")]
-    public string sourceLanguageCode
+    private Locale _sourceLocale = null;
+    [global::ProtoBuf.ProtoMember(8, IsRequired = false, Name=@"sourceLocale", DataFormat = global::ProtoBuf.DataFormat.Default)]
+    [global::System.ComponentModel.DefaultValue(null)]
+    public Locale sourceLocale
     {
-      get { return _sourceLanguageCode; }
-      set { _sourceLanguageCode = value; }
+      get { return _sourceLocale; }
+      set { _sourceLocale = value; }
     }
 
-    private string _targetLanguageCode = "";
-    [global::ProtoBuf.ProtoMember(9, IsRequired = false, Name=@"targetLanguageCode", DataFormat = global::ProtoBuf.DataFormat.Default)]
-    [global::System.ComponentModel.DefaultValue("")]
-    public string targetLanguageCode
+    private Locale _targetLocale = null;
+    [global::ProtoBuf.ProtoMember(9, IsRequired = false, Name=@"targetLocale", DataFormat = global::ProtoBuf.DataFormat.Default)]
+    [global::System.ComponentModel.DefaultValue(null)]
+    public Locale targetLocale
     {
-      get { return _targetLanguageCode; }
-      set { _targetLanguageCode = value; }
-    }
-
-    private string _sourceCountryCode = "";
-    [global::ProtoBuf.ProtoMember(10, IsRequired = false, Name=@"sourceCountryCode", DataFormat = global::ProtoBuf.DataFormat.Default)]
-    [global::System.ComponentModel.DefaultValue("")]
-    public string sourceCountryCode
-    {
-      get { return _sourceCountryCode; }
-      set { _sourceCountryCode = value; }
-    }
-
-    private string _targetCountryCode = "";
-    [global::ProtoBuf.ProtoMember(11, IsRequired = false, Name=@"targetCountryCode", DataFormat = global::ProtoBuf.DataFormat.Default)]
-    [global::System.ComponentModel.DefaultValue("")]
-    public string targetCountryCode
-    {
-      get { return _targetCountryCode; }
-      set { _targetCountryCode = value; }
+      get { return _targetLocale; }
+      set { _targetLocale = value; }
     }
 
     private int _taskType = default(int);
-    [global::ProtoBuf.ProtoMember(12, IsRequired = false, Name=@"taskType", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    [global::ProtoBuf.ProtoMember(10, IsRequired = false, Name=@"taskType", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
     [global::System.ComponentModel.DefaultValue(default(int))]
     public int taskType
     {
@@ -122,7 +108,7 @@ namespace SolasMatch.Proto.model
     }
 
     private int _taskStatus = default(int);
-    [global::ProtoBuf.ProtoMember(13, IsRequired = false, Name=@"taskStatus", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    [global::ProtoBuf.ProtoMember(11, IsRequired = false, Name=@"taskStatus", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
     [global::System.ComponentModel.DefaultValue(default(int))]
     public int taskStatus
     {
@@ -131,20 +117,13 @@ namespace SolasMatch.Proto.model
     }
 
     private bool _published = default(bool);
-    [global::ProtoBuf.ProtoMember(14, IsRequired = false, Name=@"published", DataFormat = global::ProtoBuf.DataFormat.Default)]
+    [global::ProtoBuf.ProtoMember(12, IsRequired = false, Name=@"published", DataFormat = global::ProtoBuf.DataFormat.Default)]
     [global::System.ComponentModel.DefaultValue(default(bool))]
     public bool published
     {
       get { return _published; }
       set { _published = value; }
     }
-    private readonly global::System.Collections.Generic.List<Tag> _tag = new global::System.Collections.Generic.List<Tag>();
-    [global::ProtoBuf.ProtoMember(15, Name=@"tag", DataFormat = global::ProtoBuf.DataFormat.Default)]
-    public global::System.Collections.Generic.List<Tag> tag
-    {
-      get { return _tag; }
-    }
-  
     private global::ProtoBuf.IExtension extensionObject;
     global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
       { return global::ProtoBuf.Extensible.GetExtensionObject(ref extensionObject, createIfMissing); }

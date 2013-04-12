@@ -1,9 +1,14 @@
 
-d
-Organisation.proto"N
+º
+Organisation.proto"£
 Organisation
 
 id (
 name (	
-	home_page (	
-	biography (	
+	biography (	
+homepage (	
+email (	
+address (	
+city (	
+country (	
+regionalFocus	 (	

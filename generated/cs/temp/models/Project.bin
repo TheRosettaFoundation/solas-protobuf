@@ -1,9 +1,9 @@
 
-”
-Project.proto"‚
+›
+Project.protoLocale.proto	Tag.proto"ð
 Project
 
-id (
+id (
 title (	
 description (	
 deadline (	
@@ -13,7 +13,6 @@
 	wordCount (
 createdTime	 (	
 status
- (	
-sourceLanguageCode (	
-sourceCountryCode (	
-tag (	
+ (	
+sourceLocale (2.Locale
+tag (2.Tag

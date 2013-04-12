@@ -1,14 +1,15 @@
 
-Ç
+à
 
-User.proto"¸
-User
-user_id (
+User.protoLocale.proto"Ã
+User
+
+id (
 display_name (	
 email (	
 password (	
 	biography (	
 nonce (	
-created_time (	
-native_lang_id (
-native_region_id	 (
+created_time (	
+nativeLocale (2.Locale!
+secondaryLocales	 (2.Locale

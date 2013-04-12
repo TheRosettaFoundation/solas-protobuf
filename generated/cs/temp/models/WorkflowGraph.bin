@@ -1,6 +1,6 @@
 
-|
-WorkflowGraph.protoWorkflowNode.proto"Q
+n
+WorkflowGraph.protoWorkflowNode.proto"C
 WorkflowGraph
-rootNode (2.WorkflowNode
-allNodes (2.WorkflowNode
+rootNode (2.WorkflowNode
+	projectId (

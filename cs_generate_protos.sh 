@@ -31,6 +31,7 @@ protoc -o./generated/cs/temp/models/WorkflowNode.bin -I./protos/models/ ./protos
 protoc -o./generated/cs/temp/models/WorkflowGraph.bin -I./protos/models/ ./protos/models/WorkflowGraph.proto                     && ./ProtoGen/protogen.exe -i:./generated/cs/temp/models/WorkflowGraph.bin -o:./generated/cs/models/WorkflowGraph.cs -d -ns:"SolasMatch.Proto.model"
 protoc -o./generated/cs/temp/models/Statistic.bin -I./protos/models/ ./protos/models/Statistic.proto                             && ./ProtoGen/protogen.exe -i:./generated/cs/temp/models/Statistic.bin -o:./generated/cs/models/Statistic.cs -d -ns:"SolasMatch.Proto.model"
 protoc -o./generated/cs/temp/models/ProjectFile.bin -I./protos/models/ ./protos/models/ProjectFile.proto                         && ./ProtoGen/protogen.exe -i:./generated/cs/temp/models/ProjectFile.bin -o:./generated/cs/models/ProjectFile.cs -d -ns:"SolasMatch.Proto.model"
+protoc -o./generated/cs/temp/models/Locale.bin -I./protos/models/ ./protos/models/Locale.proto                         			 && ./ProtoGen/protogen.exe -i:./generated/cs/temp/models/Locale.bin -o:./generated/cs/models/Locale.cs -d -ns:"SolasMatch.Proto.model"
 
 ### Generate Requests Classes ###
 protoc -o./generated/cs/temp/requests/UserTaskScoreRequest.bin -I./protos/requests/ ./protos/requests/UserTaskScoreRequest.proto && ./ProtoGen/protogen.exe -i:./generated/cs/temp/requests/UserTaskScoreRequest.bin -o:./generated/cs/requests/UserTaskScoreRequest.cs -d -ns:"SolasMatch.Proto.request"

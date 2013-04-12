@@ -8,6 +8,8 @@
 //------------------------------------------------------------------------------
 
 // Generated from: Project.proto
+// Note: requires additional types generated from: Locale.proto
+// Note: requires additional types generated from: Tag.proto
 namespace SolasMatch.Proto.model
 {
   [global::System.Serializable, global::ProtoBuf.ProtoContract(Name=@"Project")]
@@ -15,8 +17,10 @@ namespace SolasMatch.Proto.model
   {
     public Project() {}
     
-    private int _id;
-    [global::ProtoBuf.ProtoMember(1, IsRequired = true, Name=@"id", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+
+    private int _id = default(int);
+    [global::ProtoBuf.ProtoMember(1, IsRequired = false, Name=@"id", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    [global::System.ComponentModel.DefaultValue(default(int))]
     public int id
     {
       get { return _id; }
@@ -104,26 +108,17 @@ namespace SolasMatch.Proto.model
       set { _status = value; }
     }
 
-    private string _sourceLanguageCode = "";
-    [global::ProtoBuf.ProtoMember(11, IsRequired = false, Name=@"sourceLanguageCode", DataFormat = global::ProtoBuf.DataFormat.Default)]
-    [global::System.ComponentModel.DefaultValue("")]
-    public string sourceLanguageCode
+    private Locale _sourceLocale = null;
+    [global::ProtoBuf.ProtoMember(11, IsRequired = false, Name=@"sourceLocale", DataFormat = global::ProtoBuf.DataFormat.Default)]
+    [global::System.ComponentModel.DefaultValue(null)]
+    public Locale sourceLocale
     {
-      get { return _sourceLanguageCode; }
-      set { _sourceLanguageCode = value; }
+      get { return _sourceLocale; }
+      set { _sourceLocale = value; }
     }
-
-    private string _sourceCountryCode = "";
-    [global::ProtoBuf.ProtoMember(12, IsRequired = false, Name=@"sourceCountryCode", DataFormat = global::ProtoBuf.DataFormat.Default)]
-    [global::System.ComponentModel.DefaultValue("")]
-    public string sourceCountryCode
-    {
-      get { return _sourceCountryCode; }
-      set { _sourceCountryCode = value; }
-    }
-    private readonly global::System.Collections.Generic.List<string> _tag = new global::System.Collections.Generic.List<string>();
-    [global::ProtoBuf.ProtoMember(13, Name=@"tag", DataFormat = global::ProtoBuf.DataFormat.Default)]
-    public global::System.Collections.Generic.List<string> tag
+    private readonly global::System.Collections.Generic.List<Tag> _tag = new global::System.Collections.Generic.List<Tag>();
+    [global::ProtoBuf.ProtoMember(12, Name=@"tag", DataFormat = global::ProtoBuf.DataFormat.Default)]
+    public global::System.Collections.Generic.List<Tag> tag
     {
       get { return _tag; }
     }
