@@ -1,0 +1,8 @@
+
+§
+OrgMembershipRefused.protoEmailMessage.proto"u
+OrgMembershipRefused<
+
+email_type (2.EmailMessage.Type:OrgMembershipRefused
+user_id (
+org_id (

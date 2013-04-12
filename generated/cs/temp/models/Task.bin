@@ -1,0 +1,23 @@
+
+Ó
+
+Task.proto	Tag.proto"¹
+Task
+
+id (
+	projectId (
+title (	
+comment (	
+deadline (	
+	wordCount (
+createdTime (	
+sourceLanguageCode (	
+targetLanguageCode	 (	
+sourceCountryCode
+ (	
+targetCountryCode (	
+taskType (
+
+taskStatus (
+	published (
+tag (2.Tag

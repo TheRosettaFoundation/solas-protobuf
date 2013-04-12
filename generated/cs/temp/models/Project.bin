@@ -1,0 +1,19 @@
+
+”
+Project.proto"‚
+Project
+
+id (
+title (	
+description (	
+deadline (	
+organisationId (
+impact (	
+	reference (	
+	wordCount (
+createdTime	 (	
+status
+ (	
+sourceLanguageCode (	
+sourceCountryCode (	
+tag (	
