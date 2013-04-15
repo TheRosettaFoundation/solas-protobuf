@@ -1,6 +1,6 @@
 message Country
 {
-    required int32 id = 1;
-    required string code = 2;
+    optional int32 id = 1;
+    optional string code = 2;
     optional string name = 3;
 }

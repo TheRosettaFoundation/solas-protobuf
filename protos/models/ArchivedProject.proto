@@ -1,6 +1,6 @@
 message ArchivedProject
 {
-    required int32 id = 1;
+    optional int32 id = 1;
     optional string title = 2;
     optional string description = 3;
 	optional string impact = 4;

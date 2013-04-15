@@ -1,3 +1,5 @@
+import "Locale.proto";
+
 message User
 {
     optional int32 user_id = 1;
@@ -7,6 +9,5 @@ message User
     optional string biography = 5;
     optional string nonce = 6;
     optional string created_time = 7;
-    optional int32 native_lang_id = 8;
-    optional int32 native_region_id = 9;
+    optional Locale nativeLocale = 8;
 }

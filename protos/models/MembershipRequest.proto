@@ -1,7 +1,7 @@
 message MembershipRequest
 {
-    required int32 id = 1;
-    required int32 user_id = 2;
-    required int32 org_id = 3;
+    optional int32 id = 1;
+    optional int32 user_id = 2;
+    optional int32 org_id = 3;
     optional string request_time = 4;
 }
