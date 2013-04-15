@@ -1,8 +1,17 @@
 
-n
-Locale.proto"^
-Locale
-languageName (	
-languageCode (	
-countryName (	
-countryCode (	
+ù
+UserPersonalInformation.proto"×
+UserPersonalInformation
+
+id (
+userId (
+	firstName (	
+lastName (	
+mobileNumber (
+businessNumber (
+sip (	
+jobTitle (	
+address	 (	
+city
+ (	
+country (	
