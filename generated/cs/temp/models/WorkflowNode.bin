@@ -1,9 +1,9 @@
 
-“
+u
 WorkflowNode.proto
-Task.proto"q
+Task.proto"S
 WorkflowNode
 taskId (
-task (2.Task
-next (2.WorkflowNode
-previous (2.WorkflowNode
+task (2.Task
+next (
+previous (

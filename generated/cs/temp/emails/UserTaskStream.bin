@@ -1,0 +1,7 @@
+
+”
+UserTaskStreamEmail.protoEmailMessage.proto"c
+UserTaskStreamEmail;
+
+email_type (2.EmailMessage.Type:UserTaskStreamEmail
+user_id (
