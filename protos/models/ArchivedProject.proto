@@ -1,3 +1,5 @@
+import "Locale.proto";
+
 message ArchivedProject
 {
     optional int32 id = 1;
@@ -9,8 +11,7 @@ message ArchivedProject
     optional string reference = 7;
     optional int32 wordCount = 8;
     optional string createdTime = 9;
-    optional string languageCode = 10;
-    optional string countryCode = 11;
-    optional string archivedDate = 12;
-    optional int32 translatorId = 13;
+	optional Locale sourceLocale = 10;
+    optional string archivedDate = 11;
+    optional int32 translatorId = 12;
 }
