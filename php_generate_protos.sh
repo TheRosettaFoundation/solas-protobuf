@@ -33,6 +33,7 @@ protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/Work
 protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/Statistic.proto
 protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/ProjectFile.proto
 protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/Locale.proto
+protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/UserTaskStreamNotification.proto
 
 ### Generate Requests Classes ###
 protoc-gen-php -o ./generated/php/requests -i ./protos/requests ./protos/requests/UserTaskScoreRequest.proto
