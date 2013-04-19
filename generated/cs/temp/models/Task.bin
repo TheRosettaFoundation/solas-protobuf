@@ -1,0 +1,20 @@
+
+“
+
+Task.protoLocale.proto"ö
+Task
+
+id (
+	projectId (
+title (	
+comment (	
+deadline (	
+	wordCount (
+createdTime (	
+sourceLocale (2.Locale
+targetLocale	 (2.Locale
+taskType
+ (
+
+taskStatus (
+	published (

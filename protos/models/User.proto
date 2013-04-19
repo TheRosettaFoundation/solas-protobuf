@@ -2,7 +2,7 @@ import "Locale.proto";
 
 message User
 {
-    optional int32 user_id = 1;
+    optional int32 	id = 1;
     optional string display_name = 2;
     optional string email = 3;
     optional string password = 4;
@@ -10,4 +10,5 @@ message User
     optional string nonce = 6;
     optional string created_time = 7;
     optional Locale nativeLocale = 8;
+	repeated Locale secondaryLocales = 9;
 }

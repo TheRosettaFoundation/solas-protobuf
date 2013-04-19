@@ -1,0 +1,9 @@
+
+£
+FeedbackEmail.protoEmailMessage.proto"x
+FeedbackEmail5
+
+email_type (2.EmailMessage.Type:FeedbackEmail
+taskId (
+userId (
+feedback (	

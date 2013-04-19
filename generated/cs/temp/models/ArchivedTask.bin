@@ -1,0 +1,25 @@
+
+•
+ArchivedTask.proto"þ
+ArchivedTask
+
+id (
+	projectId (
+title (	
+comment (	
+deadline (	
+	wordCount (
+createdTime (	
+sourceLanguageCode (	
+targetLanguageCode	 (	
+sourceCountryCode
+ (	
+targetCountryCode (	
+taskType (	
+
+taskStatus (	
+	published (
+translatorId (
+archiveUserId (
+archiveDate (	
+tags (	

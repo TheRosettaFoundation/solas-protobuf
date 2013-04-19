@@ -1,3 +1,6 @@
+import "Locale.proto";
+import "Tag.proto";
+
 message Project
 {
     optional int32 id = 1;
@@ -9,8 +12,7 @@ message Project
     optional string reference = 7;
     optional int32 wordCount = 8;
     optional string createdTime = 9;
-    optional string status = 10;
-    optional string sourceLanguageCode = 11;
-    optional string sourceCountryCode = 12;
-    repeated string tag = 13;
+    optional string status = 10;	
+    optional Locale sourceLocale = 11;
+    repeated Tag tag = 12;
 }

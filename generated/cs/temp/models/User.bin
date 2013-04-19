@@ -1,0 +1,15 @@
+
+à
+
+User.protoLocale.proto"Ã
+User
+
+id (
+display_name (	
+email (	
+password (	
+	biography (	
+nonce (	
+created_time (	
+nativeLocale (2.Locale!
+secondaryLocales	 (2.Locale

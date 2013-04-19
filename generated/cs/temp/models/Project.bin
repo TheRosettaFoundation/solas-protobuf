@@ -1,0 +1,18 @@
+
+›
+Project.protoLocale.proto	Tag.proto"ð
+Project
+
+id (
+title (	
+description (	
+deadline (	
+organisationId (
+impact (	
+	reference (	
+	wordCount (
+createdTime	 (	
+status
+ (	
+sourceLocale (2.Locale
+tag (2.Tag

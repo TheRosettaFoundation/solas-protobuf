@@ -2,6 +2,11 @@ message Organisation
 {
     optional int32 id = 1;
     optional string name = 2;
-    optional string home_page = 3;
-    optional string biography = 4;
+    optional string biography = 3;
+    optional string homepage = 4;
+	optional string email = 5;
+	optional string address = 6;
+	optional string city = 7;
+	optional string country = 8;
+	optional string regionalFocus = 9;
 }

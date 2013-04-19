@@ -1,0 +1,8 @@
+
+ª
+OrgMembershipAccepted.protoEmailMessage.proto"w
+OrgMembershipAccepted=
+
+email_type (2.EmailMessage.Type:OrgMembershipAccepted
+user_id (
+org_id (
