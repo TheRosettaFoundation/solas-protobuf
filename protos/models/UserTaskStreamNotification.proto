@@ -1,0 +1,6 @@
+message UserTaskStreamNotification
+{
+    optional int32 user_id = 1;
+    optional int32 interval = 2;
+    optional string last_sent = 3;
+}
