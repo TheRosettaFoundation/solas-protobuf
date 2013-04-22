@@ -4,8 +4,8 @@ message UserPersonalInformation
 	optional int32  userId = 2;
     optional string firstName = 3;
     optional string lastName = 4;
-    optional int32 	mobileNumber = 5;
-    optional int32 	businessNumber = 6;
+    optional string mobileNumber = 5;
+    optional string businessNumber = 6;
     optional string sip = 7;
     optional string jobTitle = 8;
     optional string address = 9;
