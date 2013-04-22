@@ -1,10 +1,11 @@
 message TaskReview
 {
-    optional int32 task_id = 1;
-    optional int32 user_id = 2;
-    optional int32 corrections = 3;
-    optional int32 grammar = 4;
-    optional int32 spelling = 5;
-    optional int32 consistency = 6;
-    optional string comment = 7;
+    optional int32 project_id =1;
+    optional int32 task_id = 2;
+    optional int32 user_id = 3;
+    optional int32 corrections = 4;
+    optional int32 grammar = 5;
+    optional int32 spelling = 6;
+    optional int32 consistency = 7;
+    optional string comment = 8;
 }
