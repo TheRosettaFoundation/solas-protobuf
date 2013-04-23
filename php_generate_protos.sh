@@ -35,6 +35,7 @@ protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/Proj
 protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/Locale.proto
 protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/UserPersonalInformation.proto
 
+
 ### Generate Requests Classes ###
 protoc-gen-php -o ./generated/php/requests -i ./protos/requests ./protos/requests/UserTaskScoreRequest.proto
 protoc-gen-php -o ./generated/php/requests -i ./protos/requests ./protos/requests/StatisticsUpdateRequest.proto
