@@ -17,5 +17,13 @@ message ArchivedTask
     optional int32 translatorId = 13;
     optional int32 archiveUserId = 14;
     optional string archiveDate = 15;
-    optional string tags = 16;
+	optional int32 version = 16;
+	optional string fileName = 17;
+	optional string contentType = 18;
+	optional string uploadTime = 19;
+	optional int32 userIdClaimed = 20;
+	optional int32 userIdArchived = 21;
+	optional string prerequisites = 22;
+	optional int32 userIdTaskCreator = 23;
+	optional string archivedDate = 24;
 }
