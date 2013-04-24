@@ -37,6 +37,7 @@ protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/User
 protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/UserTaskStreamNotification.proto
 protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/TaskReview.proto
 
+
 ### Generate Requests Classes ###
 protoc-gen-php -o ./generated/php/requests -i ./protos/requests ./protos/requests/UserTaskScoreRequest.proto
 protoc-gen-php -o ./generated/php/requests -i ./protos/requests ./protos/requests/StatisticsUpdateRequest.proto
