@@ -13,5 +13,5 @@ message Task
     optional Locale targetLocale = 9;
     optional int32 taskType = 10;
     optional int32 taskStatus = 11;
-    optional bool published = 12;
+    optional string published = 12;
 }
