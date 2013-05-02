@@ -36,6 +36,8 @@ protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/Loca
 protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/UserPersonalInformation.proto
 protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/UserTaskStreamNotification.proto
 protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/TaskReview.proto
+protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/BannedUser.proto
+protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/BannedOrganisation.proto
 
 
 ### Generate Requests Classes ###
