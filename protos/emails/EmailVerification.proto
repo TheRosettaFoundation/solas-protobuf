@@ -1,0 +1,7 @@
+import "EmailMessage.proto";
+
+message EmailVerification
+{
+    required EmailMessage.Type email_type = 1 [default = EmailVerification];
+    optional string email = 2;
+}

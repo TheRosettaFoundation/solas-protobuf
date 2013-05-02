@@ -10,6 +10,7 @@ protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/Task
 protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/UserTaskClaim.proto
 protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/FeedbackEmail.proto
 protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/UserTaskStreamEmail.proto
+protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/EmailVerification.proto
 
 ### Generate Model Classes ###
 protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/ArchivedTask.proto
