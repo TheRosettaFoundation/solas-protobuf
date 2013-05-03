@@ -17,6 +17,7 @@ message EmailMessage
         FeedbackEmail = 11;
         UserTaskStreamEmail = 12;
         EmailVerification = 13;
+        BannedLogin = 14;
     }
 
     required Type email_type = 1;
