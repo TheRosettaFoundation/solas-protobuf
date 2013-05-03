@@ -1,0 +1,8 @@
+message BannedUser
+{
+	optional int32 userId = 1;
+    optional int32 userIdAdmin = 2;
+	optional string banType = 3;
+	optional string comment = 4;
+	optional string bannedDate = 5;
+}
