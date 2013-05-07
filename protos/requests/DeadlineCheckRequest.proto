@@ -1,6 +1,7 @@
 message DeadlineCheckRequest
 {
-    optional int32 task_id = 1;
-    optional int32 org_id = 2;
-    optional int32 user_id = 3;
+    optional string name = 1 [default = "DeadlineCheckRequest"];
+    optional int32 task_id = 2;
+    optional int32 org_id = 3;
+    optional int32 user_id = 4;
 }

@@ -1,4 +1,5 @@
 message UserTaskScoreRequest
 {
-    optional int32 task_id = 1;
+    required string name = 1 [default = "UserTaskScoreRequest"];
+    optional int32 task_id = 2;
 }

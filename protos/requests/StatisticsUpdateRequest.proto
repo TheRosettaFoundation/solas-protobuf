@@ -1,4 +1,4 @@
 message StatisticsUpdateRequest
 {
-    optional string request_time = 1;
+    required string name = 1 [default = "StatisticsUpdateRequest"];
 }
