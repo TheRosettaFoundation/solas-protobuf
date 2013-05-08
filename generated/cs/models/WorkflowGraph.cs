@@ -16,9 +16,9 @@ namespace SolasMatch.Proto.model
   {
     public WorkflowGraph() {}
     
-    private readonly global::System.Collections.Generic.List<WorkflowNode> _rootNode = new global::System.Collections.Generic.List<WorkflowNode>();
-    [global::ProtoBuf.ProtoMember(1, Name=@"rootNode", DataFormat = global::ProtoBuf.DataFormat.Default)]
-    public global::System.Collections.Generic.List<WorkflowNode> rootNode
+    private readonly global::System.Collections.Generic.List<int> _rootNode = new global::System.Collections.Generic.List<int>();
+    [global::ProtoBuf.ProtoMember(1, Name=@"rootNode", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    public global::System.Collections.Generic.List<int> rootNode
     {
       get { return _rootNode; }
     }
@@ -32,6 +32,13 @@ namespace SolasMatch.Proto.model
       get { return _projectId; }
       set { _projectId = value; }
     }
+    private readonly global::System.Collections.Generic.List<WorkflowNode> _allNodes = new global::System.Collections.Generic.List<WorkflowNode>();
+    [global::ProtoBuf.ProtoMember(3, Name=@"allNodes", DataFormat = global::ProtoBuf.DataFormat.Default)]
+    public global::System.Collections.Generic.List<WorkflowNode> allNodes
+    {
+      get { return _allNodes; }
+    }
+  
     private global::ProtoBuf.IExtension extensionObject;
     global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
       { return global::ProtoBuf.Extensible.GetExtensionObject(ref extensionObject, createIfMissing); }

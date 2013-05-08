@@ -1,0 +1,14 @@
+message UserPersonalInformation
+{
+    optional int32 	id = 1;
+	optional int32  userId = 2;
+    optional string firstName = 3;
+    optional string lastName = 4;
+    optional string mobileNumber = 5;
+    optional string businessNumber = 6;
+    optional string sip = 7;
+    optional string jobTitle = 8;
+    optional string address = 9;
+    optional string city = 10;
+    optional string country = 11;
+}

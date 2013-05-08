@@ -1,9 +1,9 @@
 
-å
-EmailMessage.proto"Î
+þ
+EmailMessage.proto"ç
 EmailMessage&
 
-email_type (2.EmailMessage.Type"‹
+email_type (2.EmailMessage.Type"¤
 Type
 TaskScoreEmail
 UserTaskClaim
@@ -16,4 +16,5 @@ email_type (2.EmailMessage.Type"‹
 OrgTaskDeadlinePassed	!
 UserClaimedTaskDeadlinePassed
 
-FeedbackEmail*d€€€€
+FeedbackEmail
+UserTaskStreamEmail*d€€€€

@@ -32,16 +32,16 @@ namespace SolasMatch.Proto.model
       get { return _task; }
       set { _task = value; }
     }
-    private readonly global::System.Collections.Generic.List<WorkflowNode> _next = new global::System.Collections.Generic.List<WorkflowNode>();
-    [global::ProtoBuf.ProtoMember(3, Name=@"next", DataFormat = global::ProtoBuf.DataFormat.Default)]
-    public global::System.Collections.Generic.List<WorkflowNode> next
+    private readonly global::System.Collections.Generic.List<int> _next = new global::System.Collections.Generic.List<int>();
+    [global::ProtoBuf.ProtoMember(3, Name=@"next", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    public global::System.Collections.Generic.List<int> next
     {
       get { return _next; }
     }
   
-    private readonly global::System.Collections.Generic.List<WorkflowNode> _previous = new global::System.Collections.Generic.List<WorkflowNode>();
-    [global::ProtoBuf.ProtoMember(4, Name=@"previous", DataFormat = global::ProtoBuf.DataFormat.Default)]
-    public global::System.Collections.Generic.List<WorkflowNode> previous
+    private readonly global::System.Collections.Generic.List<int> _previous = new global::System.Collections.Generic.List<int>();
+    [global::ProtoBuf.ProtoMember(4, Name=@"previous", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    public global::System.Collections.Generic.List<int> previous
     {
       get { return _previous; }
     }

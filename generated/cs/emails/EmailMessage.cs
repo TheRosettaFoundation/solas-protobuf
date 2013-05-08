@@ -57,7 +57,10 @@ namespace SolasMatch.Proto.email
       UserClaimedTaskDeadlinePassed = 10,
             
       [global::ProtoBuf.ProtoEnum(Name=@"FeedbackEmail", Value=11)]
-      FeedbackEmail = 11
+      FeedbackEmail = 11,
+            
+      [global::ProtoBuf.ProtoEnum(Name=@"UserTaskStreamEmail", Value=12)]
+      UserTaskStreamEmail = 12
     }
   
     private global::ProtoBuf.IExtension extensionObject;

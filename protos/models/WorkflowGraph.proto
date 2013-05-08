@@ -2,6 +2,7 @@ import "WorkflowNode.proto";
 
 message WorkflowGraph
 {
-    repeated WorkflowNode rootNode = 1;
+    repeated int32 rootNode = 1;
     optional int32 projectId = 2;
+    repeated WorkflowNode allNodes = 3;
 }

@@ -1,0 +1,4 @@
+message UserTaskStreamNotificationRequest
+{
+    optional string name = 1 [default = "UserTaskStreamNotificationRequest"];
+}

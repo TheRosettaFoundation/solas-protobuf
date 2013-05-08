@@ -1,3 +1,5 @@
+import "Locale.proto";
+
 message ArchivedTask
 {
     optional int32 id = 1;
@@ -7,15 +9,21 @@ message ArchivedTask
     optional string deadline = 5;
     optional int32 wordCount = 6;
     optional string createdTime = 7;
-    optional string sourceLanguageCode = 8;
-    optional string targetLanguageCode = 9;
-    optional string sourceCountryCode = 10;
-    optional string targetCountryCode = 11;
-    optional string taskType = 12;
-    optional string taskStatus = 13;
-    optional bool published = 14;
-    optional int32 translatorId = 15;
-    optional int32 archiveUserId = 16;
-    optional string archiveDate = 17;
-    optional string tags = 18;
+	optional Locale sourceLocale = 8;
+	optional Locale targetLocale = 9;
+    optional string taskType = 10;
+    optional string taskStatus = 11;
+    optional bool published = 12;
+    optional int32 translatorId = 13;
+    optional int32 archiveUserId = 14;
+    optional string archiveDate = 15;
+	optional int32 version = 16;
+	optional string fileName = 17;
+	optional string contentType = 18;
+	optional string uploadTime = 19;
+	optional int32 userIdClaimed = 20;
+	optional int32 userIdArchived = 21;
+	optional string prerequisites = 22;
+	optional int32 userIdTaskCreator = 23;
+	optional string archivedDate = 24;
 }
