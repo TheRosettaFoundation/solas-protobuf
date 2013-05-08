@@ -1,0 +1,1 @@
+var _root=dcodeIO.ProtoBuf.newBuilder().create([{"name":"TaskScoreEmail","fields":[{"rule":"required","type":"EmailMessage.Type","name":"email_type","id":1,"options":{"default":"TaskScoreEmail"}},{"rule":"required","type":"string","name":"body","id":2,"options":{}}],"enums":[],"messages":[],"options":{}}]).build();

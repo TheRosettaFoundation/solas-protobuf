@@ -1,0 +1,1 @@
+var _root=dcodeIO.ProtoBuf.newBuilder().create([{"name":"PasswordResetRequest","fields":[{"rule":"optional","type":"int32","name":"user_id","id":1,"options":{}},{"rule":"required","type":"string","name":"key","id":2,"options":{}},{"rule":"optional","type":"string","name":"requestTime","id":3,"options":{}}],"enums":[],"messages":[],"options":{}}]).build();

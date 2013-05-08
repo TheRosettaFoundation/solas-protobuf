@@ -1,0 +1,1 @@
+var _root=dcodeIO.ProtoBuf.newBuilder().create([{"name":"UserTaskScoreRequest","fields":[{"rule":"optional","type":"int32","name":"task_id","id":1,"options":{}}],"enums":[],"messages":[],"options":{}}]).build();
