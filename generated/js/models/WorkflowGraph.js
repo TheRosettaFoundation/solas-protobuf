@@ -1,0 +1,1 @@
+var _root=dcodeIO.ProtoBuf.newBuilder().create([{"name":"WorkflowGraph","fields":[{"rule":"repeated","type":"WorkflowNode","name":"rootNode","id":1,"options":{}},{"rule":"optional","type":"int32","name":"projectId","id":2,"options":{}}],"enums":[],"messages":[],"options":{}}]).build();
