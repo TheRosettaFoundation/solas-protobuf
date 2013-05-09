@@ -6,12 +6,15 @@ protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/Pass
 protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/TaskArchived.proto
 protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/TaskClaimed.proto
 protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/TaskScoreEmail.proto
-protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/TaskTranslationUploaded.proto
+protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/TrackedTaskUploaded.proto
 protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/UserTaskClaim.proto
 protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/FeedbackEmail.proto
 protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/UserTaskStreamEmail.proto
 protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/EmailVerification.proto
 protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/BannedLogin.proto
+protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/TrackedTaskSourceUpdated.proto
+protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/ClaimedTaskSourceUpdated.proto
+protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/ClaimedTaskUploaded.proto
 
 ### Generate Model Classes ###
 protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/ArchivedTask.proto
@@ -41,10 +44,10 @@ protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/Task
 protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/BannedUser.proto
 protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/BannedOrganisation.proto
 
-
 ### Generate Requests Classes ###
 protoc-gen-php -o ./generated/php/requests -i ./protos/requests ./protos/requests/UserTaskScoreRequest.proto
 protoc-gen-php -o ./generated/php/requests -i ./protos/requests ./protos/requests/StatisticsUpdateRequest.proto
+protoc-gen-php -o ./generated/php/requests -i ./protos/requests ./protos/requests/TaskUploadNotificationRequest.proto
 
 ### Generate Common Classes ###
 protoc-gen-php -o ./generated/php -i ./protos ./protos/ProtoList.proto
