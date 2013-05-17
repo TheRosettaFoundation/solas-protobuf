@@ -14,13 +14,14 @@ message EmailMessage
         TrackedTaskUploaded = 8;
         OrgTaskDeadlinePassed = 9;
         UserClaimedTaskDeadlinePassed = 10;
-        FeedbackEmail = 11;
+        UserFeedback = 11;
         UserTaskStreamEmail = 12;
         EmailVerification = 13;
         BannedLogin = 14;
         TrackedTaskSourceUpdated = 15;
         ClaimedTaskUploaded = 16;
         ClaimedTaskSourceUpdated = 17;
+        OrgFeedback = 18;
     }
 
     required Type email_type = 1;

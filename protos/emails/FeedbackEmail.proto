@@ -1,9 +1,0 @@
-import "EmailMessage.proto";
-
-message FeedbackEmail
-{
-    required EmailMessage.Type email_type = 1 [default = FeedbackEmail];
-    required int32 taskId = 2;
-    repeated int32 userId = 3;
-    required string feedback = 4;
-}
