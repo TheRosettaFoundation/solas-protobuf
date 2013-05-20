@@ -6,4 +6,5 @@ message OrgFeedback
     required int32 task_id = 2;
     required int32 claimant_id = 3;
     required string feedback = 4;
+    required int32 user_id = 5;
 }
