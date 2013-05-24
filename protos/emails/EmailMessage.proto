@@ -22,6 +22,8 @@ message EmailMessage
         ClaimedTaskUploaded = 16;
         ClaimedTaskSourceUpdated = 17;
         OrgFeedback = 18;
+        OrgCreatedSiteAdmin = 19;
+        OrgCreatedOrgAdmin = 20;
     }
 
     required Type email_type = 1;

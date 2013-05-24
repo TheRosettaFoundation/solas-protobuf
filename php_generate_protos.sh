@@ -50,6 +50,7 @@ protoc-gen-php -o ./generated/php/requests -i ./protos/requests ./protos/request
 protoc-gen-php -o ./generated/php/requests -i ./protos/requests ./protos/requests/StatisticsUpdateRequest.proto
 protoc-gen-php -o ./generated/php/requests -i ./protos/requests ./protos/requests/TaskUploadNotificationRequest.proto
 protoc-gen-php -o ./generated/php/requests -i ./protos/requests ./protos/requests/CalculateProjectDeadlinesRequest.proto
+protoc-gen-php -o ./generated/php/requests -i ./protos/requests ./protos/requests/OrgCreatedNotificationRequest.proto
 
 ### Generate Common Classes ###
 protoc-gen-php -o ./generated/php -i ./protos ./protos/ProtoList.proto

@@ -1,0 +1,8 @@
+import "EmailMessage.proto";
+
+message OrgCreatedOrgAdmin
+{
+    required EmailMessage.Type email_type = 1 [default = OrgCreatedOrgAdmin];
+    required int32 org_id = 2;
+    required int32 org_admin_id = 3;
+}
