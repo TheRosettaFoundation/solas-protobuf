@@ -1,0 +1,1 @@
+var _root=dcodeIO.ProtoBuf.newBuilder().create([{"name":"PasswordResetEmail","fields":[{"rule":"required","type":"EmailMessage.Type","name":"email_type","id":1,"options":{"default":"PasswordResetEmail"}},{"rule":"required","type":"int32","name":"user_id","id":2,"options":{}}],"enums":[],"messages":[],"options":{}}]).build();

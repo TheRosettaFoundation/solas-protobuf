@@ -1,0 +1,1 @@
+var _root=dcodeIO.ProtoBuf.newBuilder().create([{"name":"Tag","fields":[{"rule":"optional","type":"int32","name":"id","id":1,"options":{}},{"rule":"required","type":"string","name":"label","id":2,"options":{}}],"enums":[],"messages":[],"options":{}}]).build();

@@ -1,0 +1,1 @@
+var _root=dcodeIO.ProtoBuf.newBuilder().create([{"name":"StatisticsUpdateRequest","fields":[{"rule":"optional","type":"string","name":"request_time","id":1,"options":{}}],"enums":[],"messages":[],"options":{}}]).build();

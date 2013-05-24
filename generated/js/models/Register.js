@@ -1,0 +1,1 @@
+var _root=dcodeIO.ProtoBuf.newBuilder().create([{"name":"Register","fields":[{"rule":"required","type":"string","name":"email","id":1,"options":{}},{"rule":"required","type":"string","name":"password","id":2,"options":{}}],"enums":[],"messages":[],"options":{}}]).build();
