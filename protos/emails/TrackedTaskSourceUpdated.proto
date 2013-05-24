@@ -1,0 +1,9 @@
+import "EmailMessage.proto";
+
+message TrackedTaskSourceUpdated
+{
+    required EmailMessage.Type email_type = 1 [default = TrackedTaskSourceUpdated];
+    required int32 user_id = 2;
+    required int32 task_id = 3;
+    optional int32 translator_id = 4;
+}

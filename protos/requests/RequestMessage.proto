@@ -1,4 +1,4 @@
 message RequestMessage
 {
-    required string name = 1;
+    required string class_name = 1;
 }
