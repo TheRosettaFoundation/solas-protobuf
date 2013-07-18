@@ -16,6 +16,7 @@ protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/Bann
 protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/TrackedTaskSourceUpdated.proto
 protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/ClaimedTaskSourceUpdated.proto
 protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/ClaimedTaskUploaded.proto
+protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/UserReferenceEmail.proto
 
 ### Generate Model Classes ###
 protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/ArchivedTask.proto

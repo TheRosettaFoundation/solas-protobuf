@@ -1,0 +1,7 @@
+import "EmailMessage.proto";
+
+message UserReferenceEmail
+{
+    required EmailMessage.Type email_type = 1 [default = UserReferenceEmail];
+    required int32 user_id = 2;
+}

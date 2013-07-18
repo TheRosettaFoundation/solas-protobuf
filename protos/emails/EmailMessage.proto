@@ -24,6 +24,7 @@ message EmailMessage
         OrgFeedback = 18;
         OrgCreatedSiteAdmin = 19;
         OrgCreatedOrgAdmin = 20;
+        UserReferenceEmail = 21;
     }
 
     required Type email_type = 1;
