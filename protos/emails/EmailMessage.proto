@@ -26,6 +26,7 @@ message EmailMessage
         OrgCreatedOrgAdmin = 20;
         UserReferenceEmail = 21;
         UserBadgeAwardedEmail = 22;
+        UserUnclaimedTask = 23;
     }
 
     required Type email_type = 1;

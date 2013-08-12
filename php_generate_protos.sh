@@ -18,6 +18,7 @@ protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/Clai
 protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/ClaimedTaskUploaded.proto
 protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/UserReferenceEmail.proto
 protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/UserBadgeAwardedEmail.proto
+protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/UserUnclaimedTaskEmail.proto
 
 ### Generate Model Classes ###
 protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/ArchivedTask.proto
