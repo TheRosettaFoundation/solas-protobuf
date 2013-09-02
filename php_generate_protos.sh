@@ -55,5 +55,8 @@ protoc-gen-php -o ./generated/php/requests -i ./protos/requests ./protos/request
 protoc-gen-php -o ./generated/php/requests -i ./protos/requests ./protos/requests/CalculateProjectDeadlinesRequest.proto
 protoc-gen-php -o ./generated/php/requests -i ./protos/requests ./protos/requests/OrgCreatedNotificationRequest.proto
 
+### Generate Notification Classes ###
+protoc-gen-php -o ./generated/php/notifications -i ./protos/notifications ./protos/notifications/TaskRevokedNotification.proto
+
 ### Generate Common Classes ###
 protoc-gen-php -o ./generated/php -i ./protos ./protos/ProtoList.proto

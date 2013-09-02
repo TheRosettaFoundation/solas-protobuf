@@ -27,6 +27,8 @@ message EmailMessage
         UserReferenceEmail = 21;
         UserBadgeAwardedEmail = 22;
         UserUnclaimedTask = 23;
+        UserTaskRevokedEmail = 24;
+        OrgTaskRevokedEmail = 25;
     }
 
     required Type email_type = 1;
