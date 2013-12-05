@@ -29,6 +29,7 @@ message EmailMessage
         UserUnclaimedTask = 23;
         UserTaskRevokedEmail = 24;
         OrgTaskRevokedEmail = 25;
+        ProjectCreated = 26;
     }
 
     required Type email_type = 1;
