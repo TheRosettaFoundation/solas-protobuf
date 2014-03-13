@@ -1,3 +1,5 @@
+package SolasMatch.Common.Protobufs.Models;
+
 message Tag
 {
     optional int32 id = 1;

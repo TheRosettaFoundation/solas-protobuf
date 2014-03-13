@@ -1,8 +1,10 @@
+package SolasMatch.Common.Protobufs.Emails;
+
 import "EmailMessage.proto";
 
 message ProjectCreatedEmail
 {
-    required EmailMessage.Type email_type = 1 [default = ProjectCreated];
+    required SolasMatch.Common.Protobufs.Emails.EmailMessage.Type email_type = 1 [default = ProjectCreated];
     required string recipient_email = 2;
     required int32 project_id = 3;
 }

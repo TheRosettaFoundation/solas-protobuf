@@ -1,3 +1,5 @@
+package SolasMatch.Common.Protobufs.Models;
+
 message Organisation
 {
     optional int32 id = 1;

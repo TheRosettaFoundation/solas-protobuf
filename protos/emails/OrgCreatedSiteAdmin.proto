@@ -1,8 +1,10 @@
+package SolasMatch.Common.Protobufs.Emails;
+
 import "EmailMessage.proto";
 
 message OrgCreatedSiteAdmin
 {
-    required EmailMessage.Type email_type = 1 [default = OrgCreatedSiteAdmin];
+    required SolasMatch.Common.Protobufs.Emails.EmailMessage.Type email_type = 1 [default = OrgCreatedSiteAdmin];
     required int32 org_id = 2;
     required int32 site_admin_id = 3;
 }

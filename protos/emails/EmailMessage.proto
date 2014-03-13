@@ -1,3 +1,5 @@
+package SolasMatch.Common.Protobufs.Emails;
+
 message EmailMessage
 {
     extensions 100 to max;

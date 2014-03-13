@@ -48,6 +48,8 @@ protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/User
 protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/TaskReview.proto
 protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/BannedUser.proto
 protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/BannedOrganisation.proto
+protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/ProtoList.proto
+protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/OAuthResponse.proto
 
 ### Generate Requests Classes ###
 protoc-gen-php -o ./generated/php/requests -i ./protos/requests ./protos/requests/UserTaskScoreRequest.proto
@@ -58,6 +60,3 @@ protoc-gen-php -o ./generated/php/requests -i ./protos/requests ./protos/request
 
 ### Generate Notification Classes ###
 protoc-gen-php -o ./generated/php/notifications -i ./protos/notifications ./protos/notifications/TaskRevokedNotification.proto
-
-### Generate Common Classes ###
-protoc-gen-php -o ./generated/php -i ./protos ./protos/ProtoList.proto

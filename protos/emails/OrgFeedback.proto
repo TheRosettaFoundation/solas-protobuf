@@ -1,8 +1,10 @@
+package SolasMatch.Common.Protobufs.Emails;
+
 import "EmailMessage.proto";
 
 message OrgFeedback
 {
-    required EmailMessage.Type email_type = 1 [default = OrgFeedback];
+    required SolasMatch.Common.Protobufs.Emails.EmailMessage.Type email_type = 1 [default = OrgFeedback];
     required int32 task_id = 2;
     required int32 claimant_id = 3;
     required string feedback = 4;
