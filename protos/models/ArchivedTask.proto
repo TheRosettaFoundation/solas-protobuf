@@ -1,3 +1,5 @@
+package SolasMatch.Common.Protobufs.Models;
+
 import "Locale.proto";
 
 message ArchivedTask
@@ -9,8 +11,8 @@ message ArchivedTask
     optional string deadline = 5;
     optional int32 wordCount = 6;
     optional string createdTime = 7;
-	optional Locale sourceLocale = 8;
-	optional Locale targetLocale = 9;
+	optional SolasMatch.Common.Protobufs.Models.Locale sourceLocale = 8;
+	optional SolasMatch.Common.Protobufs.Models.Locale targetLocale = 9;
     optional int32 taskType = 10;
     optional string taskStatus = 11;
     optional bool published = 12;

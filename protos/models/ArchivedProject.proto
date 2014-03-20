@@ -1,3 +1,5 @@
+package SolasMatch.Common.Protobufs.Models;
+
 import "Locale.proto";
 
 message ArchivedProject
@@ -11,7 +13,7 @@ message ArchivedProject
     optional string reference = 7;
     optional int32 wordCount = 8;
     optional string createdTime = 9;
-	optional Locale sourceLocale = 10;
+	optional SolasMatch.Common.Protobufs.Models.Locale sourceLocale = 10;
 	optional int32 userIdArchived = 11;
 	optional int32 userIdProjectCreator = 12;
 	optional string fileName = 13;
