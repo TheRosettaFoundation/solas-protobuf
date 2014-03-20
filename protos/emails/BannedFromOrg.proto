@@ -1,0 +1,8 @@
+import "EmailMessage.proto";
+
+message BannedFromOrg
+{
+    required EmailMessage.Type email_type = 1 [default = BannedFromOrg];
+    optional int32 user_id = 2;
+    optional int32 org_id = 3;
+}
