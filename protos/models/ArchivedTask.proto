@@ -16,7 +16,6 @@ message ArchivedTask
     optional int32 taskType = 10;
     optional string taskStatus = 11;
     optional bool published = 12;
-    optional string archiveDate = 13;
 	optional int32 version = 14;
 	optional string fileName = 15;
 	optional string contentType = 16;
