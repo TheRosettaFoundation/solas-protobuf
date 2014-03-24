@@ -13,4 +13,5 @@ message UserPersonalInformation
     optional string address = 9;
     optional string city = 10;
     optional string country = 11;
+    optional bool receive_credit = 12;
 }
