@@ -6,7 +6,7 @@ message UserPersonalInformation
     optional string lastName = 4;
     optional string mobileNumber = 5;
     optional string businessNumber = 6;
-    optional string sip = 7;
+    optional int32 languagePreference = 7;
     optional string jobTitle = 8;
     optional string address = 9;
     optional string city = 10;
