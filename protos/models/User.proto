@@ -1,3 +1,5 @@
+package SolasMatch.Common.Protobufs.Models;
+
 import "Locale.proto";
 
 message User
@@ -9,6 +11,6 @@ message User
     optional string biography = 5;
     optional string nonce = 6;
     optional string created_time = 7;
-    optional Locale nativeLocale = 8;
-	repeated Locale secondaryLocales = 9;
+    optional SolasMatch.Common.Protobufs.Models.Locale nativeLocale = 8;
+	repeated SolasMatch.Common.Protobufs.Models.Locale secondaryLocales = 9;
 }

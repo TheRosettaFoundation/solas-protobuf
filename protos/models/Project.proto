@@ -1,3 +1,5 @@
+package SolasMatch.Common.Protobufs.Models;
+
 import "Locale.proto";
 import "Tag.proto";
 
@@ -13,6 +15,6 @@ message Project
     optional int32 wordCount = 8;
     optional string createdTime = 9;
     optional string status = 10;	
-    optional Locale sourceLocale = 11;
-    repeated Tag tag = 12;
+    optional SolasMatch.Common.Protobufs.Models.Locale sourceLocale = 11;
+    repeated SolasMatch.Common.Protobufs.Models.Tag tag = 12;
 }

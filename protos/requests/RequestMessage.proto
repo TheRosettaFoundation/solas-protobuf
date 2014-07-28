@@ -1,3 +1,5 @@
+package SolasMatch.Common.Protobufs.Requests;
+
 message RequestMessage
 {
     required string class_name = 1;

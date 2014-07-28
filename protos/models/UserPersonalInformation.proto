@@ -1,3 +1,5 @@
+package SolasMatch.Common.Protobufs.Models;
+
 message UserPersonalInformation
 {
     optional int32 	id = 1;
@@ -11,4 +13,5 @@ message UserPersonalInformation
     optional string address = 9;
     optional string city = 10;
     optional string country = 11;
+    optional bool receive_credit = 12;
 }

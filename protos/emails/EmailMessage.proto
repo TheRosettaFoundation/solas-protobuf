@@ -1,3 +1,5 @@
+package SolasMatch.Common.Protobufs.Emails;
+
 message EmailMessage
 {
     extensions 100 to max;
@@ -29,6 +31,9 @@ message EmailMessage
         UserUnclaimedTask = 23;
         UserTaskRevokedEmail = 24;
         OrgTaskRevokedEmail = 25;
+        ProjectCreated = 26;
+        BannedFromOrg = 27;
+        UserBannedNotificationToOrg = 28;
     }
 
     required Type email_type = 1;

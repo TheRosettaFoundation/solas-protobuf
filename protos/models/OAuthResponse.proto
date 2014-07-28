@@ -1,0 +1,9 @@
+package SolasMatch.Common.Protobufs.Models;
+
+message OAuthResponse
+{
+    required string token = 1;
+    required string token_type = 2;
+    required string expires = 3;
+    required string expires_in = 4;
+}

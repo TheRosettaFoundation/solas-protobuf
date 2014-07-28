@@ -1,3 +1,5 @@
+package SolasMatch.Common.Protobufs.Models;
+
 message Statistic
 {
     optional string name = 1;

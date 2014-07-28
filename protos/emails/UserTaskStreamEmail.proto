@@ -1,7 +1,9 @@
+package SolasMatch.Common.Protobufs.Emails;
+
 import "EmailMessage.proto";
 
 message UserTaskStreamEmail
 {
-    required EmailMessage.Type email_type = 1 [default = UserTaskStreamEmail];
+    required SolasMatch.Common.Protobufs.Emails.EmailMessage.Type email_type = 1 [default = UserTaskStreamEmail];
     required int32 user_id = 2;
 }

@@ -1,8 +1,10 @@
+package SolasMatch.Common.Protobufs.Emails;
+
 import "EmailMessage.proto";
 
 message UserBadgeAwardedEmail
 {
-    required EmailMessage.Type email_type = 1 [default = UserBadgeAwardedEmail];
+    required SolasMatch.Common.Protobufs.Emails.EmailMessage.Type email_type = 1 [default = UserBadgeAwardedEmail];
     required int32 user_id = 2;
     required int32 badge_id = 3;
 }

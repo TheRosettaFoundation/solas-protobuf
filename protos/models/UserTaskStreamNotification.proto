@@ -1,3 +1,5 @@
+package SolasMatch.Common.Protobufs.Models;
+
 message UserTaskStreamNotification
 {
     optional int32 user_id = 1;

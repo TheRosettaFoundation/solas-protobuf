@@ -1,3 +1,5 @@
+package SolasMatch.Common.Protobufs.Models;
+
 message Locale
 {
     optional string languageName = 1;

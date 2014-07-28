@@ -1,3 +1,5 @@
+package SolasMatch.Common.Protobufs.Requests;
+
 message UserTaskStreamNotificationRequest
 {
     required string class_name = 1 [default = "UserTaskStreamNotificationRequest"];

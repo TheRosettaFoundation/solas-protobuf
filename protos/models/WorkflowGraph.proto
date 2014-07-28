@@ -1,8 +1,10 @@
+package SolasMatch.Common.Protobufs.Models;
+
 import "WorkflowNode.proto";
 
 message WorkflowGraph
 {
     repeated int32 rootNode = 1;
     optional int32 projectId = 2;
-    repeated WorkflowNode allNodes = 3;
+    repeated SolasMatch.Common.Protobufs.Models.WorkflowNode allNodes = 3;
 }
