@@ -17,4 +17,6 @@ message Project
     optional string status = 10;	
     optional SolasMatch.Common.Protobufs.Models.Locale sourceLocale = 11;
     repeated SolasMatch.Common.Protobufs.Models.Tag tag = 12;
+    optional bool imageUploaded = 13;
+    optional bool imageApproved = 14;
 }
