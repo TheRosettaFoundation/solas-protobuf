@@ -1,62 +1,66 @@
 ### Generate Email Classes ###
-protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/EmailMessage.proto
-protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/OrgMembershipAccepted.proto
-protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/OrgMembershipRefused.proto
-protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/PasswordResetEmail.proto
-protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/TaskArchived.proto
-protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/TaskClaimed.proto
-protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/TaskScoreEmail.proto
-protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/TrackedTaskUploaded.proto
-protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/UserTaskClaim.proto
-protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/OrgFeedback.proto
-protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/UserFeedback.proto
-protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/UserTaskStreamEmail.proto
-protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/EmailVerification.proto
-protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/BannedLogin.proto
-protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/TrackedTaskSourceUpdated.proto
-protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/ClaimedTaskSourceUpdated.proto
-protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/ClaimedTaskUploaded.proto
-protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/UserReferenceEmail.proto
-protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/UserBadgeAwardedEmail.proto
-protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/UserUnclaimedTaskEmail.proto
-protoc-gen-php -o ./generated/php/emails -i ./protos/emails ./protos/emails/ProjectCreatedEmail.proto
+cd ./protos/emails
+protoc --plugin=$1 --php_out=../../generated/php/emails EmailMessage.proto
+protoc --plugin=$1 --php_out=../../generated/php/emails OrgMembershipAccepted.proto
+protoc --plugin=$1 --php_out=../../generated/php/emails OrgMembershipRefused.proto
+protoc --plugin=$1 --php_out=../../generated/php/emails PasswordResetEmail.proto
+protoc --plugin=$1 --php_out=../../generated/php/emails TaskArchived.proto
+protoc --plugin=$1 --php_out=../../generated/php/emails TaskClaimed.proto
+protoc --plugin=$1 --php_out=../../generated/php/emails TaskScoreEmail.proto
+protoc --plugin=$1 --php_out=../../generated/php/emails TrackedTaskUploaded.proto
+protoc --plugin=$1 --php_out=../../generated/php/emails UserTaskClaim.proto
+protoc --plugin=$1 --php_out=../../generated/php/emails OrgFeedback.proto
+protoc --plugin=$1 --php_out=../../generated/php/emails UserFeedback.proto
+protoc --plugin=$1 --php_out=../../generated/php/emails UserTaskStreamEmail.proto
+protoc --plugin=$1 --php_out=../../generated/php/emails EmailVerification.proto
+protoc --plugin=$1 --php_out=../../generated/php/emails BannedLogin.proto
+protoc --plugin=$1 --php_out=../../generated/php/emails TrackedTaskSourceUpdated.proto
+protoc --plugin=$1 --php_out=../../generated/php/emails ClaimedTaskSourceUpdated.proto
+protoc --plugin=$1 --php_out=../../generated/php/emails ClaimedTaskUploaded.proto
+protoc --plugin=$1 --php_out=../../generated/php/emails UserReferenceEmail.proto
+protoc --plugin=$1 --php_out=../../generated/php/emails UserBadgeAwardedEmail.proto
+protoc --plugin=$1 --php_out=../../generated/php/emails UserUnclaimedTaskEmail.proto
+protoc --plugin=$1 --php_out=../../generated/php/emails ProjectCreatedEmail.proto
 
+cd ../models
 ### Generate Model Classes ###
-protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/ArchivedTask.proto
-protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/Badge.proto
-protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/Country.proto
-protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/Language.proto
-protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/Login.proto
-protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/MembershipRequest.proto
-protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/Organisation.proto
-protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/PasswordReset.proto
-protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/PasswordResetRequest.proto
-protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/Register.proto
-protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/Tag.proto
-protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/TaskMetadata.proto
-protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/Task.proto
-protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/User.proto
-protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/Project.proto
-protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/ArchivedProject.proto
-protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/WorkflowNode.proto
-protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/WorkflowGraph.proto
-protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/Statistic.proto
-protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/ProjectFile.proto
-protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/Locale.proto
-protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/UserPersonalInformation.proto
-protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/UserTaskStreamNotification.proto
-protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/TaskReview.proto
-protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/BannedUser.proto
-protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/BannedOrganisation.proto
-protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/ProtoList.proto
-protoc-gen-php -o ./generated/php/models -i ./protos/models ./protos/models/OAuthResponse.proto
+protoc --plugin=$1 --php_out=../../generated/php/models ArchivedTask.proto
+protoc --plugin=$1 --php_out=../../generated/php/models Badge.proto
+protoc --plugin=$1 --php_out=../../generated/php/models Country.proto
+protoc --plugin=$1 --php_out=../../generated/php/models Language.proto
+protoc --plugin=$1 --php_out=../../generated/php/models Login.proto
+protoc --plugin=$1 --php_out=../../generated/php/models MembershipRequest.proto
+protoc --plugin=$1 --php_out=../../generated/php/models Organisation.proto
+protoc --plugin=$1 --php_out=../../generated/php/models PasswordReset.proto
+protoc --plugin=$1 --php_out=../../generated/php/models PasswordResetRequest.proto
+protoc --plugin=$1 --php_out=../../generated/php/models Register.proto
+protoc --plugin=$1 --php_out=../../generated/php/models Tag.proto
+protoc --plugin=$1 --php_out=../../generated/php/models TaskMetadata.proto
+protoc --plugin=$1 --php_out=../../generated/php/models Task.proto
+protoc --plugin=$1 --php_out=../../generated/php/models User.proto
+protoc --plugin=$1 --php_out=../../generated/php/models Project.proto
+protoc --plugin=$1 --php_out=../../generated/php/models ArchivedProject.proto
+protoc --plugin=$1 --php_out=../../generated/php/models WorkflowNode.proto
+protoc --plugin=$1 --php_out=../../generated/php/models WorkflowGraph.proto
+protoc --plugin=$1 --php_out=../../generated/php/models Statistic.proto
+protoc --plugin=$1 --php_out=../../generated/php/models ProjectFile.proto
+protoc --plugin=$1 --php_out=../../generated/php/models Locale.proto
+protoc --plugin=$1 --php_out=../../generated/php/models UserPersonalInformation.proto
+protoc --plugin=$1 --php_out=../../generated/php/models UserTaskStreamNotification.proto
+protoc --plugin=$1 --php_out=../../generated/php/models TaskReview.proto
+protoc --plugin=$1 --php_out=../../generated/php/models BannedUser.proto
+protoc --plugin=$1 --php_out=../../generated/php/models BannedOrganisation.proto
+protoc --plugin=$1 --php_out=../../generated/php/models ProtoList.proto
+protoc --plugin=$1 --php_out=../../generated/php/models OAuthResponse.proto
 
+cd ../requests
 ### Generate Requests Classes ###
-protoc-gen-php -o ./generated/php/requests -i ./protos/requests ./protos/requests/UserTaskScoreRequest.proto
-protoc-gen-php -o ./generated/php/requests -i ./protos/requests ./protos/requests/StatisticsUpdateRequest.proto
-protoc-gen-php -o ./generated/php/requests -i ./protos/requests ./protos/requests/TaskUploadNotificationRequest.proto
-protoc-gen-php -o ./generated/php/requests -i ./protos/requests ./protos/requests/CalculateProjectDeadlinesRequest.proto
-protoc-gen-php -o ./generated/php/requests -i ./protos/requests ./protos/requests/OrgCreatedNotificationRequest.proto
+protoc --plugin=$1 --php_out=../../generated/php/requests UserTaskScoreRequest.proto
+protoc --plugin=$1 --php_out=../../generated/php/requests StatisticsUpdateRequest.proto
+protoc --plugin=$1 --php_out=../../generated/php/requests TaskUploadNotificationRequest.proto
+protoc --plugin=$1 --php_out=../../generated/php/requests CalculateProjectDeadlinesRequest.proto
+protoc --plugin=$1 --php_out=../../generated/php/requests OrgCreatedNotificationRequest.proto
 
+cd ../notifications
 ### Generate Notification Classes ###
-protoc-gen-php -o ./generated/php/notifications -i ./protos/notifications ./protos/notifications/TaskRevokedNotification.proto
+protoc --plugin=$1 --php_out=../../generated/php/notifications TaskRevokedNotification.proto
