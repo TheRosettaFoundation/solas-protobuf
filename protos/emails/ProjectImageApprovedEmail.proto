@@ -1,0 +1,10 @@
+package SolasMatch.Common.Protobufs.Emails;
+
+import "EmailMessage.proto";
+
+message ProjectImageApprovedEmail
+{
+    required SolasMatch.Common.Protobufs.Emails.EmailMessage.Type email_type = 1 [default = ProjectImageApprovedEmail];
+    required int32 project_id = 2;
+    required int32 user_id = 3;
+}
