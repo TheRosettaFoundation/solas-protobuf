@@ -21,4 +21,6 @@ message ArchivedProject
 	optional string mimeType = 15;
 	optional string archivedDate = 16;
 	optional string tags = 17;
+    optional bool imageUploaded = 18;
+    optional bool imageApproved = 19;
 }

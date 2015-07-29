@@ -34,6 +34,10 @@ message EmailMessage
         ProjectCreated = 26;
         BannedFromOrg = 27;
         UserBannedNotificationToOrg = 28;
+	ProjectImageUploadedEmail = 29;
+	ProjectImageRemovedEmail = 30;
+	ProjectImageApprovedEmail = 31;
+	ProjectImageDisapprovedEmail = 32;
     }
 
     required Type email_type = 1;
