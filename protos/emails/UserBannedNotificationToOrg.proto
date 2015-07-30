@@ -1,8 +1,10 @@
+package SolasMatch.Common.Protobufs.Emails;
+
 import "EmailMessage.proto";
 
 message UserBannedNotificationToOrg
 {
-    required EmailMessage.Type email_type = 1 [default = UserBannedNotificationToOrg];
+    required SolasMatch.Common.Protobufs.Emails.EmailMessage.Type email_type = 1 [default = UserBannedNotificationToOrg];
     optional int32 user_id = 2;
     optional int32 org_member_id = 3;
     optional int32 org_id = 4;
