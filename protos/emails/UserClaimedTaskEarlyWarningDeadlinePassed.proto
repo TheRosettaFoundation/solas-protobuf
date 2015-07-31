@@ -1,0 +1,10 @@
+package SolasMatch.Common.Protobufs.Emails;
+
+import "EmailMessage.proto";
+
+message UserClaimedTaskEarlyWarningDeadlinePassed
+{
+    required SolasMatch.Common.Protobufs.Emails.EmailMessage.Type email_type = 1 [default = UserClaimedTaskEarlyWarningDeadlinePassed];
+    required int32 task_id = 2;
+    required int32 translator_id = 3;
+}
