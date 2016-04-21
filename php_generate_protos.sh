@@ -31,6 +31,7 @@ protoc --plugin=$1 --php_out=../../generated/php/models Language.proto
 protoc --plugin=$1 --php_out=../../generated/php/models Login.proto
 protoc --plugin=$1 --php_out=../../generated/php/models MembershipRequest.proto
 protoc --plugin=$1 --php_out=../../generated/php/models Organisation.proto
+protoc --plugin=$1 --php_out=../../generated/php/models OrganisationExtendedProfile.proto
 protoc --plugin=$1 --php_out=../../generated/php/models PasswordReset.proto
 protoc --plugin=$1 --php_out=../../generated/php/models PasswordResetRequest.proto
 protoc --plugin=$1 --php_out=../../generated/php/models Register.proto

@@ -1,0 +1,30 @@
+package SolasMatch.Common.Protobufs.Models;
+
+message OrganisationExtendedProfile
+{
+    optional int32 id = 1;
+    optional string facebook = 2;
+    optional string linkedin = 3;
+    optional string primaryContactName = 4;
+    optional string primaryContactTitle = 5;
+    optional string primaryContactEmail = 6;
+    optional string primaryContactPhone = 7;
+    optional string otherContacts = 8;
+    optional string structure = 9;
+    optional string affiliations = 10;
+    optional string urlVideo1 = 11;
+    optional string urlVideo2 = 12;
+    optional string urlVideo3 = 13;
+    optional string subjectMatters = 14;
+    optional string activitys = 15;
+    optional string employees = 16;
+    optional string fundings = 17;
+    optional string finds = 18;
+    optional string translations = 19;
+    optional string requests = 20;
+    optional string contents = 21;
+    optional string pages = 22;
+    optional string sources = 23;
+    optional string targets = 24;
+    optional string oftens = 25;
+}
