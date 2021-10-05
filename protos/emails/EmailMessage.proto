@@ -40,6 +40,7 @@ message EmailMessage
 	ProjectImageDisapprovedEmail = 32;
         UserClaimedTaskEarlyWarningDeadlinePassed = 33;
         UserClaimedTaskLateWarningDeadlinePassed = 34;
+        UserRecordWarningDeadlinePassed = 35;
     }
 
     required Type email_type = 1;
