@@ -41,6 +41,7 @@ message EmailMessage
         UserClaimedTaskEarlyWarningDeadlinePassed = 33;
         UserClaimedTaskLateWarningDeadlinePassed = 34;
         UserRecordWarningDeadlinePassed = 35;
+        UserTaskCancelled = 36;
     }
 
     required Type email_type = 1;
